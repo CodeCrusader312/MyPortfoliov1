@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Personal Portfolio Website</title>
+    <link rel="icon" href="images/logo1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bea7003aae.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="interactive.css">
+    
+</head>
+    
+<body>
+    <!-- ==================== Cursor & Loader ==================== -->
+    <div class="cursor"></div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+
+    <!-- ==================== Header Section ==================== -->
+<!-- ==================== Header Section ==================== -->
+<div id="header">
+    <div class="container">
+      <nav>
+  <div class="logo-wrapper">
+    <img src="images/logo1.png" alt="logo" class="logo">
+  </div>
+  <ul id="sidemenu">
+    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    <li><a href="#header" class="active-section">Home</a></li> 
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
+      
+      <div class="header-text">
+  <h1><span class="white-text">Hi, I'm </span><span class="red-text">KEIFER,</span></h1>
+  <h1><span class="white-text">A </span><span id="typed-output" class="red-text"></span></h1>
+  <h1><span class="white-text">from the Philippines</span></h1>
+</div>
+
+    </div>
+  </div>
+
+
+    <!-- ==================== About Section ==================== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-right">
+                    <img src="images/user.jpg" alt="Keifer Tondo">
+                </div>
+                <div class="about-col-2" data-aos="fade-left">
+                    <h1 class="sub-title">About Me</h1> 
+                    <div class="glow-line"></div>  
+                    <p>Hi! I'm <span class="highlight">Keifer</span> Kimpa-oy Tondo, a first-year BSIT student at King's College of the Philippines. I'm currently learning <span class="highlight">Java</span>, web development <span class="highlight">(HTML, CSS, JavaScript)</span>, and exploring <span class="highlight">cybersecurity basics</span>. I'm passionate about building websites, improving user experiences, and developing practical skills one project at a time.</p>  
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">  
+                        <ul>
+                            <li><span>UI/UX</span><p>Designing clean, user-friendly interfaces for web and mobile apps using Figma and Canva.</p></li>
+                            <li><span>Web Development</span><p>Building responsive websites using HTML, CSS, JavaScript, and basic frameworks.</p></li>
+                            <li><span>App Development</span><p>Currently exploring mobile app development with Flutter and Java (Android Studio).</p></li>  
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025</span><p>Created personal portfolio website and completed several mini-projects using HTML, CSS, JS.</p></li>
+                            <li><span>2024 - 2025</span><p>Freelance logo and UI design for local student-led startups using Canva and Figma.</p></li>
+                            <li><span>2023</span><p>Volunteered in school tech support, assisting with basic computer troubleshooting.</p></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - Present</span><p>BS in Information Technology, King's College of the Philippines</p></li>
+                            <li><span>2022 - 2024</span><p>Senior High School (STEM/ICT Strand), with focus on computer systems and programming</p></li>
+                            <li><span>2020 - 2022</span><p>Junior High School – Active in ICT-related clubs and events</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== Services Section ==================== -->
+    
+     <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="glow-line"></div>
+      <div class="services-list">
+
+        <!-- Web Design -->
+        <div class="service-container" data-aos="zoom-in">
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="service-box front">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Design</h2>
+              </div>
+              <div class="service-box back">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p>
+                  I build clean, modern, and responsive websites tailored to your goals. Whether it's a portfolio, business site, or landing page, I focus on speed, usability, and mobile-first design to make your brand stand out online.
+                </p>
+                <a href="#contact" class="btn-more">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="service-container" data-aos="zoom-in" data-aos-delay="200">
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="service-box front">
+                <i class="fa-solid fa-microchip"></i>
+                <h2>UI/UX Design</h2>
+              </div>
+              <div class="service-box back">
+                <i class="fa-solid fa-microchip"></i>
+                <p>
+                  I design intuitive interfaces that users actually enjoy. Every detail—from layout to interactions—is thoughtfully crafted to improve usability and create a smooth, engaging experience for your audience.
+                </p>
+                <a href="#contact" class="btn-more">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Design -->
+        <div class="service-container" data-aos="zoom-in" data-aos-delay="400">
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="service-box front">
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+              </div>
+              <div class="service-box back">
+                <i class="fa-brands fa-app-store"></i>
+                <p>
+                  From wireframes to polished mockups, I design mobile and desktop apps that are functional, user-friendly, and visually consistent. My designs are built to work across all devices and platforms.
+                </p>
+                <a href="#contact" class="btn-more">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    
+    <!-- ==================== Portfolio Section ==================== -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="glow-line"></div>
+            <div class="work-list">
+                <div class="work" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/work1.jpg" alt="VibeStream Music App">
+                    <div class="layer">
+                        <h3>VibeStream – Music App UI</h3>
+                        <p>Designed a clean and modern interface for a cross-platform music streaming app. Focused on personalized playlists and a dark mode experience.</p>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/work2.jpg" alt="TaskFlow Productivity App">
+                    <div class="layer">
+                        <h3>TaskFlow - Productivity App</h3>
+                        <p>A sleek and simple task management app that helps users organize their day with to-do lists, deadlines, and reminders. Designed for both desktop and mobile use.</p>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/work3.jpg" alt="ShopZone E-commerce Website">
+                    <div class="layer">
+                        <h3>ShopZone – E-commerce Website</h3>
+                        <p>Developed a responsive e-commerce site for a local clothing brand using HTML, CSS, JavaScript, and Firebase for product management and checkout flow.</p>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ==================== Contact Section ==================== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" data-aos="fade-right">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09395426722</p>
+                    <div class="social-icons" data-aos="fade-up" data-aos-delay="200">
+                        <a href="https://facebook.com/yourusername" target="_blank"><i class="fa-brands fa-square-facebook"></i></a> 
+                        <a href="https://twitter.com/yourusername" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com/yourusername" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right" data-aos="fade-left">
+                    <form onsubmit="showThanks(); return false;">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== Footer ==================== -->
+    <div class="copyright" data-aos="fade-up">
+        <p>© 2024 Keifer Kimpa-oy Tondo. <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+    </div>
+
+    <!-- ==================== JavaScript ==================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+
+</body>
+</html>
