@@ -232,6 +232,22 @@ nav ul li a:hover::after {
   justify-content: center;
 }
 
+nav ul li a i {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #ff4b6e;
+}
+nav ul li a strong {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a:hover i {
+  color: #ff004f;
+  text-shadow: 0 0 8px rgba(255, 0, 79, 0.6);
+}
+
+
 
 /* ==================== HEADER TEXT - LEFT ALIGNED ==================== */
 .header-text {
